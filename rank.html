@@ -1,175 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking</title>
+    <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/rank.css" />
+    <link rel="stylesheet" href="css/shared-items.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ranking</title>
-  <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Varela+Round&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/rank.css">
-  <link rel="stylesheet" href="css/inicio.css" />
-  <link rel="stylesheet" href="css/shared-items.css" />
-</head>
+  <body>
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <nav>
+      <div class="d-flex justify-content-evenly">
+        <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
-<body style="max-width: 100%;">
-  <!----------------------------------------------- nav bar --------------------------------------------------------------->
-  <nav>
-    <div class="d-flex justify-content-evenly">
-      <img src="img/schneider-logo.svg" alt="logo da schneider" />
-
-      <div class="d-flex align-items-center">
-        <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros"
-          aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw" />
-        <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
-          <img src="img/search-button-icon.svg" alt="pesquisar" />
-        </button>
+        <div class="d-flex align-items-center">
+          <input
+            type="text"
+            class="form-control bg-light"
+            placeholder="Pesquise por pessoas, desafios, assuntos & outros"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+            style="width: 30vw"
+          />
+          <button
+            class="btn btn-secondary btn-outline"
+            type="button"
+            id="button-addon1"
+          >
+            <img src="img/search-button-icon.svg" alt="pesquisar" />
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <img src="img/message-icon.svg" alt="messagens" />
+          <img src="img/notification-icon.svg" alt="notificações" />
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="img/joana-photo.svg" alt="foto de perfil" />
+          <p class="pt-3">Joana Ramos</p>
+          <a
+            class="icons mx-2"
+            href="login.html"
+            style="width: 25px; height: 20px"
+          >
+            <img
+              class="img-fluid"
+              src="img/share-icon.svg"
+              alt="compartilhar postagem"
+            />
+          </a>
+        </div>
       </div>
-      <div class="d-flex align-items-center gap-5">
-        <img src="img/message-icon.svg" alt="messagens" />
-        <img src="img/notification-icon.svg" alt="notificações" />
-      </div>
-      <div class="d-flex align-items-center">
-        <img src="img/joana-photo.svg" alt="foto de perfil" />
-        <p class="pt-3">Joana Ramos</p>
-        <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
-          <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
-        </a>
-      </div>
-    </div>
-    <ul class="nav-bar-items">
-      <li><a href="inicio.html">Inicio</a></li>
-      <li class="active"><a href="rank.html">Ranking</a></li>
-      <li><a href="forum.html">Fórum</a></li>
-      <li><a href="perfil.html">Perfil</a></li>
-      <li><a href="index.html">Sobre o Projeto</a></li>
-      <li><a href="instituto.html">Instituto Schneider</a></li>
-    </ul>
-  </nav>
-  <!----------------------------------------------- nav bar --------------------------------------------------------------->
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/carousel0.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="img/carousel1.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="pontuacaoh1">
-    <h1>Pontuações</h1>
-  </div>
-  <div class="botoes">
-    <button type="button" class="geral">Pontuação Geral</button>
-    <button type="button" class="desafio">O Desafio</button>
-  </div>
-  <div class="conteinerPontuacao">
-    <div class="pessoas">
-      <div class="vazia"></div>
-      <ul>
-        <li><img src="img/Joana.png"> Joana Ramos</li>
-        <li><img src="img/Emerson.png"> Emerson L. Thoman</li>
-        <li><img src="img/Kelsey.png"> Kelsey T. Donovan</li>
-        <li><img src="img/Jack.png"> Jack L. Gregory</li>
-        <li><img src="img/Mary.png"> Mary R. Mercado</li>
-        <li><img src="img/Theresa.png"> Theresa N. Maki</li>
-        <li><img src="img/Jack2.png"> Jason B. Mitchell</li>
-        <li><img src="img/David.png"> David B. Rodriguez</li>
+      <ul class="nav-bar-items">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li class="active"><a href="rank.html">Ranking</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="index.html">Sobre o Projeto</a></li>
+        <li><a href="instituto.html">Instituto Schneider</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
-    </div>
-    <div class="conteinerPontuacaoRight">
-      <div class="colocao">
-        <p id="colocaoBold">Colocação</p>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-        </ul>
-      </div>
-      <div class="pontuacao">
-        <p id="pontuacaoBold">Pontuação</p>
-        <ul>
-          <li>5075</li>
-          <li>5014</li>
-          <li>4984</li>
-          <li>4764</li>
-          <li>4701</li>
-          <li>4545</li>
-          <li>4366</li>
-          <li>4344</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="conteinerImg">
-    <section class="section3">
-      <div class="section3h1">
-        <h2>28 de junho é Dia Internacional do Orgulho LGBTQIA.</h2>
-        <p>Em homenagem a este dia, estamos
-          com um evento de XP em dobro a todos os funcionarios que estiverem com a bandeira de LGBTQIA+</p>
-      </div>
-      <img src="img/lgbtwallpaper.svg" alt="">
-    </section>
-    <section class="section2">
-      <img src="img/corrida-img.png" alt="">
-      <div class="section2h1">
-        <h2>Pontuações e Interatividade</h2>
-        <p>As pontuações na plataforma são obtidas por meio de duas formas distintas: a interatividade e os
-          desafios periódicos</p>
-      </div>
-    </section>
-    <section class="section3">
-      <div class="section3h1">
-        <h2>Desafios Periódicos</h2>
-        <p>Os desafios, consistem em atividades propostas periodicamente para cumprir objetivos específicos.</p>
-      </div>
-      <img src="img/celular-img.png" alt="">
-    </section>
-    <section class="section4">
-      <img src="img/celular2-img.png" alt="">
-      <div class="section4h1">
-        <h2>Engajamento</h2>
-        <p>A interatividade, que reflete o engajamento dos usuários com a plataforma, como curtidas em posts e
-          compartilhamentos</p>
-      </div>
-    </section>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
-    <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
+    </nav>
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
 
-    <hr class="divider">
-    <p>© 2023 MySchneider | All Rights Reserved</p>
-  </footer>
-</body>
+    <main class="bg-light d-flex flex-column gap-4">
+      <div class="d-flex flex-column bg-white mx-4">
+        <img src="img/banner-profile-rank.svg" alt="capa de fundo" />
+        <div class="d-flex justify-content-between">
+          <div style="margin-left: 5rem; margin-top: -3rem">
+            <picture>
+              <img
+                src="img/joana-perfil.svg"
+                class="img-thumbnail"
+                alt="foto de perfil"
+              />
+            </picture>
+            <h4>Joana Ramos</h4>
+          </div>
+          <div class="d-flex mt-3">
+            <span class="d-flex flex-column align-items-center">
+              <p class="fw-bolder text-secondary">Dias com login</p>
+              <p class="fw-bolder fs-4 mt-4">1</p>
+              <p class="fw-bolder text-secondary text-center" style="width: 60%;">O seu recorde é de 14 dias seguidos</p>
+            </span>
+            <span class="d-flex flex-column align-items-center">
+              <p class="fw-bolder text-secondary">Progresso</p>
+              <img src="img/progresso.png" style="width: 50%;" alt="seu progresso">
+            </span>
+          </div>
+          <div class="text-white">
+            p
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 gap-5">
+          <div class="d-flex flex-column gap-4">
+            <span class="d-flex">
+              <img src="img/trophy.svg" alt="imagem trofeu"> 
+              <p class="pt-4 fw-bolder">Competições</p>
+            </span>
+            <span class="d-flex gap-4">
+              <p class="fw-bolder">2</p>
+              <p>Total de Participações</p>
+            </span>
+          </div>
+          <hr style="width: 3px; height: 9rem; background-color: gray;">
+          <div class="d-flex flex-column gap-4">
+            <span class="d-flex gap-2">
+              <img src="img/message-rank.svg" alt="imagem trofeu"> 
+              <p class="pt-4 fw-bolder">Discussões</p>
+            </span>
+            <span class="d-flex gap-4">
+              <p class="fw-bolder">10</p>
+              <p>Total de Discussões</p>
+            </span>
+          </div>
+          <hr style="width: 3px; height: 9rem; background-color: gray;">
+          <div class="d-flex flex-column gap-4">
+            <span class="d-flex gap-2">
+              <img src="img/message-rank.svg" alt="imagem trofeu"> 
+              <p class="pt-4 fw-bolder">Posts</p>
+            </span>
+            <span class="d-flex gap-4">
+              <p class="fw-bolder">14</p>
+              <p>Total de Postagens</p>
+            </span>
+          </div>
+        </div>
+      </div>
 
+      <div class="d-flex justify-content-evenly align-items-center gap-3 px-3 py-5">
+        <div class="bg-white d-flex flex-column align-items-center w-100 pb-5 pt-3">
+          <h1 class="text-schneider-color">Ranking Geral</h1>
+
+          <div class="w-100 px-4 d-flex flex-column gap-4">
+            <div class="d-flex align-items-end justify-content-end gap-5">
+              <p>Colocação</p>
+              <p>Pontuação</p>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3" style="background-color: #FFE924;">
+              <span class="d-flex align-items-center gap-2">
+                <img src="img/joana-photo.svg" alt="ranking primeiro lugar">
+                <p class="pt-3">Joana Ramos</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3" style="background-color: #DFDFDD;">
+              <span class="d-flex align-items-center gap-2">
+                <img src="https://source.unsplash.com/random/50x58/?man" style="border-radius:999px"  alt="ranking">
+                <p class="pt-3">Emerson Almeida</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3" style="background-color: #DFDFDD;">
+              <span class="d-flex align-items-center gap-2">
+                <img src="https://source.unsplash.com/random/50x57/?woman" style="border-radius:999px" alt="ranking">
+                <p class="pt-3">Bruna T. Donovan</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="https://source.unsplash.com/random/50x59/?man" style="border-radius:999px" alt="ranking">
+                <p class="pt-3">Rafael L. Martins</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="https://source.unsplash.com/random/50x58/?woman" style="border-radius:999px"  alt="ranking">
+                <p class="pt-3">Mary R. Tavarez</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between py-2 shadow px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="https://source.unsplash.com/random/50x59/?woman" style="border-radius:999px" alt="ranking">
+                <p class="pt-3">Theresa N. Maki</p>
+              </span>
+              <span class="d-flex pt-3 gap-5">
+                <p class="me-5 pe-2">1</p>
+                <p>5075</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white d-flex flex-column align-items-center w-100 px-4 py-4">
+          <h1 class="text-schneider-color">Competições</h1>
+          <div class="d-flex flex-column align-items-center gap-3">
+            <span class="d-flex flex-column align-items-center mt-5">
+              <p class="fs-2">Karaokê Fest</p>
+              <img src="img/karaoke-fest.svg" alt="karaoke fest">
+            </span>
+            <p class="text-center fw-bolder" style="width: 80%;">Solte a voz e celebre conosco nesta noite de pura diversão. Uma festa repleta de karaokê com direito a prêmios no final!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5"
+    >
+      <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
+
+      <hr class="divider" />
+      <p>© 2023 MySchneider | All Rights Reserved</p>
+    </footer>
+  </body>
 </html>

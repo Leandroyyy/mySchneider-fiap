@@ -198,12 +198,24 @@ publications.forEach((perfil) => {
 });
 
 const ownerPublishTextArea = document.querySelector("#owner-publish");
+const points = document.querySelector('#pontos-adquiridos')
+
+points.innerHTML = '5678xp'
+
+let initialPoints = 5678
+
+const toast = new bootstrap.Toast(document.querySelector('.toast'))
 
 function addOwnerPublish() {
   if (ownerPublishTextArea.value.trim() === "") {
     ownerPublishTextArea.classList.add("is-invalid");
     return;
   }
+
+  initialPoints += 50;
+  points.innerHTML = initialPoints + 'xp'
+
+  toast.show()
   ownerPublishTextArea.classList.remove("is-invalid");
   DOM.addOwnerPublish(ownerPublishTextArea.value);
   ownerPublishTextArea.value = "";
