@@ -200,9 +200,9 @@ publications.forEach((perfil) => {
 const ownerPublishTextArea = document.querySelector("#owner-publish");
 const points = document.querySelector('#pontos-adquiridos')
 
-points.innerHTML = '5678xp'
+points.innerHTML = '5025xp'
 
-let initialPoints = 5678
+let initialPoints = 5025
 
 const toast = new bootstrap.Toast(document.querySelector('.toast'))
 
