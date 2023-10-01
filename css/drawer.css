@@ -1,7 +1,7 @@
 /* Drawer */
 
 .remove {
-    @media (max-width: 999px) {
+    @media (max-width: 3000px) {
         display: none;
     }
 }
