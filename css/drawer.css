@@ -1,26 +1,7 @@
 /* Drawer */
 
-.remove {
-    @media (max-width: 999px) {
-        display: none;
-    }
-}
-
 #burger {
     display: none;
-
-    @media (max-width: 999px) {
-        display: inline;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background: white;
-        padding: 1rem;
-        z-index: 1100;
-        cursor: pointer;
-        transition: 0.3s linear;
-        box-shadow: 2px 2px 5px gray;
-    }
 }
 
 #burger:hover {
@@ -127,11 +108,4 @@ i {
 a:hover {
     color: goldenrod;
     outline: none;
-}
-
-@media screen and (max-width: 600px) {
-    #burger {
-        top: 90%;
-        left: 12%;
-    }
 }
