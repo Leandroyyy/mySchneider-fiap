@@ -1,7 +1,7 @@
 /* Drawer */
 
 .remove {
-    @media (min-width: 999px) {
+    @media (max-width: 999px) {
         display: none;
     }
 }
@@ -9,10 +9,10 @@
 #burger {
     display: none;
 
-    @media (max-width: 1700px){
+    @media (max-width: 999px) {
         display: inline;
         position: fixed;
-        top: 10px;
+        top: 20px;
         left: 20px;
         background: white;
         padding: 1rem;
