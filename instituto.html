@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/instituto.css" />
     <link rel="stylesheet" href="css/shared-items.css" />
+    <link rel="stylesheet" href="css/drawer.css" />
     <title>Perfil</title>
     <link rel="icon" type="image/png" href="img/schneider_logo.png" />
     <link
@@ -20,7 +21,7 @@
 
   <body style="width: 100%">
     <!----------------------------------------------- nav bar --------------------------------------------------------------->
-    <nav>
+    <nav class="remove">
       <div class="d-flex justify-content-evenly">
         <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
@@ -63,16 +64,63 @@
       </div>
       <ul class="nav-bar-items">
         <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="rank.html">Ranking</a></li>
         <li><a href="forum.html">Fórum</a></li>
         <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="rank.html">Empoyer</a></li>
         <li><a href="index.html">Sobre o Projeto</a></li>
-        <li class="active"><a href="instituto.html">Instituto Schneider</a></li>
+        <li class="active"><a href="instituto.html">Fundação</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
     </nav>
     <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <!--Drawer Responsive-->
+    <div id="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+  <div id="nav">
 
+      <div style="display: flex; flex-direction: column;">
+          <div class="super-container-drawer">
+              <img src="img/joana-photo.svg">
+              <div class="container-drawer-profile">
+                  <h3 class="h3profile">Joana Ramos</h3>
+                  <p class="pprofile">Estagiaria de RH</p>
+              </div>
+          </div>
+
+          <ul class="uldrawer">
+              <li class="lidrawer">
+                  <a class="a-drawer" href="inicio.html">Inicio</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="forum.html">Forum</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="perfil.html">Perfil</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="rank.html">Empoyer</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="index.html">Sobre o Projeto</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer active" href="instituto.html">Fundação</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="faq.html">FAQ</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="login.html">Logout</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+  </div>
+  <!--Drawer Responsive-->
     <main class="bg-light">
       <div
         class="instituto-banner d-flex align-items-center justify-content-center"
@@ -160,6 +208,7 @@
       <p>© 2023 MySchneider | All Rights Reserved</p>
     </footer>
     <!--End Footer-->
+    <script src="js/drawer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
     <script src="js/instituto.js"></script>
